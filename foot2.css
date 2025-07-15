@@ -1,0 +1,49 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Footer Styling */
+.footer {
+  background-color:rgb(161, 163, 163);
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer h3, .footer h4 {
+  color: #301ed2; /* Chocolate brown */
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #111111;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  background-color: #1d1c1c;
+  /* color: white; */
+  padding: 10px 0;
+}
+
+pre{
+    color: white;
+}

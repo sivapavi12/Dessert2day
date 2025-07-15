@@ -1,0 +1,166 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head1{
+    background-color:#090909;
+    padding:20px;
+    text-align:center;
+    color: white;
+    font-family: comic sans ms;
+}
+
+.navbar {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+.navbar a {
+    background-color: #0a0a0a;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: rgb(245, 243, 243);
+    text-decoration: none;
+    font-family: cambria;
+  }
+  
+.navbar a:hover {
+    background-color: #755ec3;
+    } */
+  
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navigation bar styles */
+.navbar {
+    text-align: center;
+    display: block;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    position:static;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color:  #868385;
+    padding: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-family: cambria;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+.nav-links li a.active{
+    background-color:rgb(135, 189, 189);
+}
+/* Main content styles */
+.main-content {
+    margin-left: 210px; /* Adjust based on navbar width */
+    margin-top: 10px;
+    padding: 180px;
+    text-align: center;
+    background-image: url(images/darky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+}
+
+.main-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black; /* Bakery theme color */
+    font-family: cambria headings;
+    font-style: italic;
+    background-color: rgb(235, 216, 193);
+    border-radius: 50px; 
+}
+
+.main-content h4 {
+    font-size: 25px;
+    color: black;
+    font-family: cambria;
+    background-color: bisque;
+    border-radius: 80%;
+    
+}
+
+.btn {
+    background-color: #2b5bd4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: cambria;
+}
+
+.btn:hover {
+    background-color: #3813b0;
+}
+
+/* Footer Styles */
+footer {
+    /* position: fixed; */
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color:#0a0a0a;
+    /* padding: 10px; */
+    color:white;
+    font-family: 'Times New Roman';
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 100px;
+
+    }
+}

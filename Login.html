@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+<link rel="stylesheet" href="style1.css">
+    <!-- External CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: block;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* height: 100vh; */
+        }
+
+        .login-container {
+            background-color: #c5c4c4;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin-left: 600px;
+            margin-top: 150px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .role-selector {
+            margin-bottom: 20px;
+        }
+
+        .role-selector label {
+            margin-right: 15px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #21396d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .login-btn:hover {
+            background-color: #3a6bc7;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .switch-role {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .switch-role a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .switch-role a:hover {
+            text-decoration: underline;
+        }
+
+         
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="Index.html">Dessert2Day</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Menu1.html">Menu</a></li>
+                <li><a href="Login.html" class="active">Login</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <!-- Role Selector -->
+            <div class="role-selector">
+                <label for="role">Login as:</label>
+                <label><input type="radio" name="role" value="user" checked> User</label>
+                <label><input type="radio" name="role" value="admin"> Admin</label>
+            </div>
+
+            <!-- Username Field -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <!-- Switch Role Link -->
+        <div class="switch-role">
+            <p>Not a member? <a href="Register.html">Register</a></p>
+        </div>
+    </div>
+
+   
+</body>
+</html>
